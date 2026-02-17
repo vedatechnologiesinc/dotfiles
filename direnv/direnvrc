@@ -1,0 +1,9 @@
+# -*- mode: sh -*-
+
+use_flake () {
+  watch_file flake.nix
+  watch_file flake.lock
+  eval "$(nix print-dev-env)"
+}
+
+source $HOME/.nix-profile/share/nix-direnv/direnvrc
