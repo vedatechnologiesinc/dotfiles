@@ -1,0 +1,43 @@
+# -*- mode: sh -*-
+
+#————————————————————————————————————————————————————————————————————————————————
+# keys
+# https://github.com/koekeishiya/skhd/issues/1
+
+#————————————————————————————————————————————————————————————————————————————————
+# window
+
+ctrl + alt - return : yabai -m window --toggle zoom-fullscreen
+ctrl + alt - t      : yabai -m window --toggle float --grid 6:6:1:1:4:4
+ctrl + alt - c      : yabai -m window --grid 6:6:1:1:4:4
+ctrl + alt - p      : yabai -m window --toggle zoom-parent
+ctrl + alt - s      : yabai -m window --toggle split
+ctrl + alt - up     : yabai -m window --swap north
+ctrl + alt - down   : yabai -m window --swap south
+ctrl + alt - left   : yabai -m window --swap west
+ctrl + alt - right  : yabai -m window --swap east
+ctrl + alt - m      : yabai -m window --minimize
+ctrl + alt - d      : yabai -m window --deminimize
+
+# left_bracket [
+ctrl + alt - 0x21   : yabai -m window --resize left:20:0 \
+                                      --resize right:-20:0 \
+                                      --resize top:0:20 \
+                                      --resize bottom:0:-20
+
+# right_bracket ]
+ctrl + alt - 0x1E   : yabai -m window --resize left:-20:0 \
+                                      --resize right:20:0 \
+                                      --resize top:0:-20 \
+                                      --resize bottom:0:20
+
+#———————————————————————————————————————————————————————————————————————————————
+# space
+
+ctrl + alt - b      : yabai -m space --balance
+
+#————————————————————————————————————————————————————————————————————————————————
+# display
+
+ctrl + alt - pageup   : yabai -m space --focus prev
+ctrl + alt - pagedown : yabai -m space --focus next
